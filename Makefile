@@ -12,7 +12,7 @@ OBJFILES = $(SRC:.cpp=.o)
 .PHONY: clean
 
 merge:
-	bash $(SCRIPTDIR)merge.sh
+	bash $(SCRIPTDIR)merge.sh main.c merged.cpp
 
 clean :
 	rm -rf $(BINDIR)
