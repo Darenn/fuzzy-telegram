@@ -4,7 +4,7 @@ CXXFLAGS = -Wall -Wextra -pedantic -ggdb -Wno-unused-but-set-parameter -Wno-unus
 LDFLAGS =
 BINDIR = ./bin/
 SRCDIR = ./src/
-INCDIR = ./headers/
+INCDIR = ./include/
 SCRIPTDIR = ./scripts/
 SRCFILES = $(wildcard *.cpp)
 OBJFILES = $(SRC:.cpp=.o)
@@ -12,7 +12,7 @@ OBJFILES = $(SRC:.cpp=.o)
 .PHONY: clean
 
 merge:
-	bash $(SCRIPTDIR)merge.sh main.c merged.cpp
+	echo "Hello Travis!"
 
 clean :
 	rm -rf $(BINDIR)
