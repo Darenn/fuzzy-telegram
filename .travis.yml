@@ -1,6 +1,20 @@
+addons:
+  apt:
+    # List of whitelisted in travis packages for ubuntu-precise can be found here:
+    #   https://github.com/travis-ci/apt-package-whitelist/blob/master/ubuntu-precise
+    # List of whitelisted in travis apt-sources:
+    #   https://github.com/travis-ci/apt-source-whitelist/blob/master/ubuntu.json
+    sources:
+    - ubuntu-toolchain-r-test
+    - llvm-toolchain-precise-3.7
+    packages:
+    - gcc-4.9
+    - g++-4.9
+    - clang-3.7
+    - valgrind
 language: cpp
 compiler:
-  - clang
+  - g++
 os:
   - linux
-script: make merge
+script: make test

@@ -3,10 +3,13 @@
 
 #include <iostream>
 
-class Vector2 {
+namespace fuzzyTelegram {
+
+template <typename T> class Vector2 {
 
 public:
-  float x, y;
+  T x;
+  T y;
 
   /*!
   * \brief Initialize to a Vector2(0, 0).
@@ -18,19 +21,13 @@ public:
   * \param x The x value of the vector.
   * \param y The y value of the vector;
   */
-  Vector2(const float x, const float y);
-
-  /*!
-  * \brief Make a copy of the vector given.
-  * \param v A pointer to the vector to copy.
-  */
-  Vector2(Vector2 const *v);
+  Vector2(const T x, const T y);
 
   /*!
   * \brief Make a copy of the vector given.
   * \param v A reference to the vector to copy.
   */
-  Vector2(Vector2 const &v);
+  Vector2(const Vector2 &v);
 
   ~Vector2(void);
 
@@ -50,7 +47,7 @@ public:
   * \param xValue The x value of the vector.
   * \param yValue The y value of the vector.
   */
-  void set(float xValue, float yValue);
+  void set(T xValue, T yValue);
 
   /*!
   * \brief Return a Vector2(0, 1).
@@ -115,7 +112,8 @@ public:
   static float angle(const Vector2 &from, const Vector2 &to);
 
   /*!
-  * \brief Return A copy of the vector with its magnitude clamped to maxLength.
+  * \brief Return A copy of the vector with its magnitude clamped to
+  * maxLength.
   * \param vector The vector we want to clamp.
   * \param maxLength The maximum length magnitude.
   * \return A copy of vector with its magnitude clamped to maxLength.
@@ -142,8 +140,10 @@ public:
   * \brief Linearly interpolate between vectorA and vectorB by t.
   * \param vectorA The first vector.
   * \param vectorB The second vector.
-  * \param t How far interpolation is done. Clamped between 0 and 1. When t = 0,
-  * return vectorA,  when t = 1 return vectorB, when t = 0.5 return the midpoint
+  * \param t How far interpolation is done. Clamped between 0 and 1. When t =
+  * 0,
+  * return vectorA,  when t = 1 return vectorB, when t = 0.5 return the
+  * midpoint
   * of vectorA and vectorB.
   * \return A vector interpolated.
   */
@@ -281,7 +281,8 @@ public:
   const Vector2 operator-(float v) const;
 
   /*!
-  * \brief Return a copy of this vector with x and y components multiplied by v.
+  * \brief Return a copy of this vector with x and y components multiplied by
+  * v.
   * \return A copy of this vector with x and y components multiplied by v.
   */
   const Vector2 operator*(float v) const;
@@ -316,5 +317,9 @@ public:
   */
   Vector2 &operator/=(float v);
 };
+
+typedef Vector2<int> Vector2i;
+typedef Vector2<float> Vector2f;
+}
 
 #endif
