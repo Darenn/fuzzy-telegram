@@ -9,7 +9,6 @@ addons:
     - ubuntu-toolchain-r-test
     - llvm-toolchain-precise-3.7
     packages:
-    - g++-5.4
     - valgrind
 language: cpp
 compiler:
