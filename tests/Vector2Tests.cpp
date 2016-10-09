@@ -40,4 +40,11 @@ TEST(CopyConstructor, Float) {
   EXPECT_EQ(v2.x, v.x);
   EXPECT_EQ(v2.y, v.y);
 }
+
+TEST(CopyConstructor, IntToFloat) {
+  Vector2f v(-3500, 9371);
+  Vector2i v2(v);
+  EXPECT_EQ(v2.x, v.x);
+  EXPECT_EQ(v2.y, v.y);
+}
 };

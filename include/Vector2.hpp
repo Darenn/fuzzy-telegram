@@ -24,15 +24,27 @@ public:
   Vector2(const T x, const T y);
 
   /*!
-  * \brief Make a copy of the vector given.
+  * \brief Make a copy of the vector given (could be an other type).
   * \param v A reference to the vector to copy.
   */
-  Vector2(const Vector2 &v);
+  template <typename U> explicit Vector2(const Vector2<U> &vector);
 
   ~Vector2(void);
 
   /*!
-  * \brief Normalize this vector.
+  * \brief Return the length of this vector.
+  * \return The length of this vector.
+  */
+  Vector2 magnitude();
+
+  /*!
+  * \brief Return the square length of this vector.
+  * \return The square length of this vector.
+  */
+  Vector2 squareMagnitude();
+
+  /*!
+  * \brief Normalize this vector;
   */
   void normalize();
 
@@ -90,18 +102,6 @@ public:
   * \return A copy of this vector with a magnitude of 1.
   */
   Vector2 normalized();
-
-  /*!
-  * \brief Return the length of this vector.
-  * \return The length of this vector.
-  */
-  float magnitude();
-
-  /*!
-  * \brief Return the square length of this vector.
-  * \return The square length of this vector.
-  */
-  Vector2 squareMagnitude();
 
   /*!
   * \brief Return the angle in degrees between two vectors.
