@@ -1,3 +1,4 @@
+install: ./scripts/install-dependencies.sh
 addons:
   apt:
     # List of whitelisted in travis packages for ubuntu-precise can be found here:
@@ -18,3 +19,4 @@ compiler:
 os:
   - linux
 script: make test
+sudo : true
