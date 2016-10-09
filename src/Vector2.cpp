@@ -34,6 +34,7 @@ template <typename U>
 Vector2<T> &Vector2<T>::operator=(const Vector2<U> &v) {
   x = static_cast<T>(v.x);
   y = static_cast<T>(v.y);
+  return *this;
 }
 
 template <typename T>
