@@ -8,6 +8,8 @@ template <typename T> Vector2<T>::Vector2(void) : x(0), y(0) {}
 template <typename T>
 Vector2<T>::Vector2(const T xValue, const T yValue) : x(xValue), y(yValue) {}
 
+template <typename T> Vector2<T>::Vector2(const T xy) : x(xy), y(xy) {}
+
 template <typename T>
 template <typename U>
 Vector2<T>::Vector2(const Vector2<U> &vector)
@@ -25,6 +27,21 @@ const T Vector2<T>::operator[](const std::size_t i) const {
     return y;
   else
     throw std::out_of_range("Index should be 0 or 1.");
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator=(const Vector2<U> &v) {
+  x = static_cast<T>(v.x);
+  y = static_cast<T>(v.y);
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator=(const U &value) {
+  x = static_cast<T>(value);
+  y = static_cast<T>(value);
+  return *this;
 }
 
 // template class Vector2<int>;

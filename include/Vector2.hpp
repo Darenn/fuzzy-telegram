@@ -24,6 +24,12 @@ public:
   Vector2(const T x, const T y);
 
   /*!
+  * \brief Initiliaze to a Vector2(xy, xy).
+  * \param xy The value of x and y components.
+  */
+  Vector2(const T xy);
+
+  /*!
   * \brief Make a copy of the vector given (could be an other type).
   * \param v A reference to the vector to copy.
   */
@@ -184,14 +190,14 @@ public:
   * \param v The vector this is assigned.
   * \return This vector.
   */
-  Vector2 &operator=(const Vector2 &v);
+  template <typename U> Vector2 &operator=(const Vector2<U> &v);
 
   /*!
   * \brief Set x and y of this to the given value.
   * \param f The new value of x and y of this.
   * \return This vector.
   */
-  Vector2 &operator=(const float &f);
+  template <typename U> Vector2 &operator=(const U &value);
 
   /*!
   * \brief Inverse this vector.

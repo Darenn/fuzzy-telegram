@@ -52,6 +52,18 @@ TEST(CopyConstructor, IntToFloat) {
   EXPECT_EQ(v2.y, v.y);
 }
 
+TEST(ValueConstructor, SameType) {
+  Vector2i v(2);
+  EXPECT_EQ(2, v.x);
+  EXPECT_EQ(2, v.y);
+}
+
+TEST(ValueConstructor, DifferentType) {
+  Vector2i v(2.0f);
+  EXPECT_EQ(2, v.x);
+  EXPECT_EQ(2, v.y);
+}
+
 TEST(Stream, StreamInsertion) {
   Vector2i v(2, 5);
   std::stringstream s;
@@ -79,5 +91,35 @@ TEST(ArraySubscriptOperator, OutOfRange) {
   Vector2i v(3, 4);
   EXPECT_THROW(v[5], std::out_of_range);
   EXPECT_THROW(v[-1], std::out_of_range);
+}
+
+TEST(AssignmentOperator, FromVectorSameType) {
+  Vector2i v(80, 65);
+  Vector2i v2 = v;
+  EXPECT_EQ(v2.x, v.x);
+  EXPECT_EQ(v2.y, v.y);
+}
+
+// TODO operator= on vectors of diferent type. Learn about user-defined
+// conversion.
+TEST(DISABLED_AssignmentOperator, FromVectorDifferentType) {
+  Vector2i v(80, 65);
+  // Vector2f v2 = v;
+  // EXPECT_EQ(v2.x, v.x);
+  // EXPECT_EQ(v2.y, v.y);
+}
+
+TEST(AssignmentOperator, FromValueSameType) {
+  Vector2i v(80, 65);
+  v = 2;
+  EXPECT_EQ(2, v.x);
+  EXPECT_EQ(2, v.y);
+}
+
+TEST(AssignmentOperator, FromValueDifferentType) {
+  Vector2i v(80, 65);
+  v = 2.0f;
+  EXPECT_EQ(2, v.x);
+  EXPECT_EQ(2, v.y);
 }
 };
