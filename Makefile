@@ -21,7 +21,6 @@ OBJFILES = $(SRC:.cpp=.o)
 
 test:
 	$(CXX) $(TESTSMAIN) -I$(SRCDIR) -I$(INCDIR) -o $(TESTBIN) $(LDFLAGSTESTS)
-	$(TESTBIN)
 	$(MEMORYCHECKER) $(TESTBIN)
 
 merge:
