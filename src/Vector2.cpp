@@ -1,4 +1,5 @@
 #include "Vector2.hpp"
+#include <stdexcept>
 
 namespace fuzzyTelegram {
 
@@ -17,15 +18,13 @@ template <typename T> Vector2<T>::~Vector2<T>() {}
 template <typename T> Vector2<T> Vector2<T>::magnitude() {}
 
 template <typename T>
-std::ostream &operator<<(std::ostream &output, const Vector2<T> &v) {
-  output << '(' << v.x << ", " << v.y << ')';
-  return output;
-}
-
-template <typename T>
-std::istream &operator>>(std::istream &input, Vector2<T> &v) {
-  input >> v.x >> v.y;
-  return input;
+const T Vector2<T>::operator[](const std::size_t i) const {
+  if (i == 0)
+    return x;
+  else if (i == 1)
+    return y;
+  else
+    throw std::out_of_range("Index should be 0 or 1.");
 }
 
 // template class Vector2<int>;
