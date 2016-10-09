@@ -155,10 +155,7 @@ public:
   * \param v The vector to insert into output.
   * \return A The output stream.
   */
-  friend std::ostream &operator<<(std::ostream &output, const Vector2 &v) {
-    output << '(' << v.x << ", " << v.y << ')';
-    return output;
-  }
+  friend std::ostream &operator<<(std::ostream &output, const Vector2 &v);
 
   /*!
   * \brief Extract the x and y components from the input stream into v.
@@ -166,10 +163,7 @@ public:
   * \param v The vector in which we insert x and y components.
   * \return The input stream.
   */
-  friend std::istream &operator>>(std::istream &input, Vector2 &v) {
-    input >> v.x >> v.y;
-    return input;
-  }
+  friend std::istream &operator>>(std::istream &input, Vector2 &v);
 
   /*!
   * \brief Return the x (i == 0) or y (i == 1) components.
