@@ -47,6 +47,10 @@ Vector2<T> &Vector2<T>::operator=(const U &value) {
   return *this;
 }
 
+template <typename T> Vector2<T> Vector2<T>::operator-(void) const {
+  return Vector2<T>(-x, -y);
+}
+
 // template class Vector2<int>;
 // template class Vector2<float>;
 };

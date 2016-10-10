@@ -201,10 +201,10 @@ public:
   template <typename U> Vector2 &operator=(const U &value);
 
   /*!
-  * \brief Inverse this vector.
-  * \return This vector.
+  * \brief Return the inverse of this vector "(-x, -y)".
+  * \return The inverse of this vector..
   */
-  Vector2 &operator-(void);
+  Vector2 operator-(void) const;
 
   /*!
   * \brief Check if this vector is equal to another.

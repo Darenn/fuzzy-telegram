@@ -122,4 +122,16 @@ TEST(AssignmentOperator, FromValueDifferentType) {
   EXPECT_EQ(2, v.x);
   EXPECT_EQ(2, v.y);
 }
+
+TEST(UnaryMinusOperator, PositiveVector) {
+  Vector2i v(20, 679);
+  EXPECT_EQ((-v).x, -20);
+  EXPECT_EQ((-v).y, -679);
+}
+
+TEST(UnaryMinusOperator, NegativeVectorWithZero) {
+  Vector2i v(0, -50);
+  EXPECT_EQ((-v).x, 0);
+  EXPECT_EQ((-v).y, 50);
+}
 };
