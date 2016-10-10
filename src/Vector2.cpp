@@ -1,4 +1,5 @@
 #include "Vector2.hpp"
+#include <cassert>
 #include <stdexcept>
 
 namespace fuzzyTelegram {
@@ -32,6 +33,7 @@ const T Vector2<T>::operator[](const std::size_t i) const {
 template <typename T>
 template <typename U>
 Vector2<T> &Vector2<T>::operator=(const Vector2<U> &v) {
+  assert(v != NULL);
   x = static_cast<T>(v.x);
   y = static_cast<T>(v.y);
   return *this;

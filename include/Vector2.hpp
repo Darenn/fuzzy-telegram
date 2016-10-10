@@ -188,6 +188,7 @@ public:
   /*!
   * \brief Set x and y of this to x and y of the given vector.
   * \param v The vector this is assigned.
+  * \pre vector is defined.
   * \return This vector.
   */
   template <typename U> Vector2 &operator=(const Vector2<U> &v);
