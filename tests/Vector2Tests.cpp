@@ -152,4 +152,22 @@ TEST(EqualityOperator, VectorsNotEqual) {
   Vector2i v2(3, 2);
   EXPECT_FALSE(v == v2);
 }
+
+TEST(NotEqualOperator, VectorsSameType) {
+  Vector2i v(30, 25);
+  Vector2i v2(2, 25);
+  EXPECT_TRUE(v != v2);
+}
+
+TEST(NotEqualOperator, VectorsDifferentType) {
+  Vector2i v(30, 25);
+  Vector2f v2(31.0f, 22.0f);
+  EXPECT_TRUE(v != v2);
+}
+
+TEST(NotEqualOperator, VectorsEqual) {
+  Vector2i v(30, 25);
+  Vector2i v2(30, 25);
+  EXPECT_FALSE(v != v2);
+}
 };

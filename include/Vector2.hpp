@@ -188,7 +188,6 @@ public:
   /*!
   * \brief Set x and y of this to x and y of the given vector.
   * \param v The vector this is assigned.
-  * \pre vector is defined.
   * \return This vector.
   */
   template <typename U> Vector2 &operator=(const Vector2<U> &v);
@@ -208,7 +207,6 @@ public:
 
   /*!
   * \brief Check if this vector is equal to another.
-  * \pre The other vector (v) is defined.
   * \return true if x and y components of both vectors are equal.
   */
   template <typename U> bool operator==(const Vector2<U> &v) const;
@@ -217,7 +215,7 @@ public:
   * \brief Check if this vector is different from another.
   * \return true if x and y components of both vectors are different.
   */
-  bool operator!=(const Vector2 &v) const;
+  template <typename U> bool operator!=(const Vector2<U> &v) const;
 
   /*!
   * \brief Add this vector to another.
