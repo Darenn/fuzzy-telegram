@@ -208,9 +208,10 @@ public:
 
   /*!
   * \brief Check if this vector is equal to another.
+  * \pre The other vector (v) is defined.
   * \return true if x and y components of both vectors are equal.
   */
-  bool operator==(const Vector2 &v) const;
+  template <typename U> bool operator==(const Vector2<U> &v) const;
 
   /*!
   * \brief Check if this vector is different from another.

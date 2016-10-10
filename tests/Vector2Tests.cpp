@@ -134,4 +134,22 @@ TEST(UnaryMinusOperator, NegativeVectorWithZero) {
   EXPECT_EQ((-v).x, 0);
   EXPECT_EQ((-v).y, 50);
 }
+
+TEST(EqualityOperator, VectorsSameType) {
+  Vector2i v(30, 25);
+  Vector2i v2(30, 25);
+  EXPECT_TRUE(v == v2);
+}
+
+TEST(EqualityOperator, VectorsDifferentType) {
+  Vector2i v(30, 25);
+  Vector2f v2(30.0f, 25.0f);
+  EXPECT_TRUE(v == v2);
+}
+
+TEST(EqualityOperator, VectorsNotEqual) {
+  Vector2i v(30, 25);
+  Vector2i v2(3, 2);
+  EXPECT_FALSE(v == v2);
+}
 };

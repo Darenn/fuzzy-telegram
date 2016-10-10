@@ -51,6 +51,13 @@ template <typename T> Vector2<T> Vector2<T>::operator-(void) const {
   return Vector2<T>(-x, -y);
 }
 
+template <typename T>
+template <typename U>
+bool Vector2<T>::operator==(const Vector2<U> &v) const {
+  assert(v != NULL);
+  return static_cast<T>(v.x) == x && static_cast<T>(v.y) == v.y;
+}
+
 // template class Vector2<int>;
 // template class Vector2<float>;
 };
