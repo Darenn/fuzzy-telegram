@@ -250,28 +250,28 @@ public:
   * this vector.
   * \return This vector.
   */
-  Vector2 &operator+=(const Vector2 &v);
+  template <typename U> Vector2 &operator+=(const Vector2<U> &v);
 
   /*!
   * \brief Substract x and y components of the other vector from x and y
   * components of this vector.
   * \return This vector.
   */
-  Vector2 &operator-=(const Vector2 &v);
+  template <typename U> Vector2 &operator-=(const Vector2<U> &v);
 
   /*!
   * \brief Multiply x and y components of the this vector by x and y
   * components of the other vector.
   * \return This vector.
   */
-  Vector2 &operator*=(const Vector2 &v);
+  template <typename U> Vector2 &operator*=(const Vector2<U> &v);
 
   /*!
   * \brief Divide x and y components of the this vector by x and y
   * components of the other vector.
   * \return This vector.
   */
-  Vector2 &operator/=(const Vector2 &v);
+  template <typename U> Vector2 &operator/=(const Vector2<U> &v);
 
   /*!
   * \brief Return a copy of this vector with v added to x and y components.

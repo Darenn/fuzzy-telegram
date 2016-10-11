@@ -83,6 +83,37 @@ const Vector2<T> Vector2<T>::operator/(const Vector2<T> &v) const {
   return Vector2<T>(x / v.x, y / v.y);
 }
 
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator+=(const Vector2<U> &v) {
+  x += v.x;
+  y += v.y;
+  return *this;
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator-=(const Vector2<U> &v) {
+  x -= v.x;
+  y -= v.y;
+  return *this;
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator*=(const Vector2<U> &v) {
+  x *= v.x;
+  y *= v.y;
+  return *this;
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator/=(const Vector2<U> &v) {
+  x /= v.x;
+  y /= v.y;
+  return *this;
+}
 // template class Vector2<int>;
 // template class Vector2<float>;
 };

@@ -219,4 +219,68 @@ TEST(BinaryArithmeticOperatorDivide, VectorsSameType) {
   EXPECT_EQ(2, (v / v2).x);
   EXPECT_EQ(4, (v / v2).y);
 }
+
+TEST(CompoundAssignmentOperatorPlus, VectorsSameType) {
+  Vector2i v(20, 30);
+  Vector2i v2(40, 20);
+  v += v2;
+  EXPECT_EQ(60, v.x);
+  EXPECT_EQ(50, v.y);
+}
+
+TEST(CompoundAssignmentOperatorPlus, VectorsDifferentType) {
+  Vector2i v(20, 30);
+  Vector2f v2(40.0, 20.0);
+  v += v2;
+  EXPECT_EQ(60, v.x);
+  EXPECT_EQ(50, v.y);
+}
+
+TEST(CompoundAssignmentOperatorMinus, VectorsSameType) {
+  Vector2i v(20, 30);
+  Vector2i v2(40, 20);
+  v -= v2;
+  EXPECT_EQ(-20, v.x);
+  EXPECT_EQ(10, v.y);
+}
+
+TEST(CompoundAssignmentOperatorMinus, VectorsDifferentType) {
+  Vector2i v(20, 30);
+  Vector2f v2(40.0f, 20.0f);
+  v -= v2;
+  EXPECT_EQ(-20, v.x);
+  EXPECT_EQ(10, v.y);
+}
+
+TEST(CompoundAssignmentOperatorMultiply, VectorsSameType) {
+  Vector2i v(2, 3);
+  Vector2i v2(0, 2);
+  v *= v2;
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(6, v.y);
+}
+
+TEST(CompoundAssignmentOperatorMultiply, VectorsDifferentType) {
+  Vector2i v(2, 3);
+  Vector2f v2(0.0f, 2.0f);
+  v *= v2;
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(6, v.y);
+}
+
+TEST(CompoundAssignmentOperatorDivide, VectorsSameType) {
+  Vector2i v(2, 4);
+  Vector2i v2(0, 2);
+  v /= v2;
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(2, v.y);
+}
+
+TEST(CompoundAssignmentOperatorDivide, VectorsDifferentType) {
+  Vector2i v(2, 4);
+  Vector2f v2(0.0f, 2.0f);
+  v /= v2;
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(2, v.y);
+}
 };
