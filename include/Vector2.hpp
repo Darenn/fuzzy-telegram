@@ -277,51 +277,51 @@ public:
   * \brief Return a copy of this vector with v added to x and y components.
   * \return A copy of this vector with v added to x and y components.
   */
-  const Vector2 operator+(float v) const;
+  template <typename U> const Vector2 operator+(U value) const;
 
   /*!
   * \brief Return a copy of this vector with v substracted from x and y
   * components.
   * \return A copy of this vector with v substracted from x and y components.
   */
-  const Vector2 operator-(float v) const;
+  template <typename U> const Vector2 operator-(U value) const;
 
   /*!
   * \brief Return a copy of this vector with x and y components multiplied by
   * v.
   * \return A copy of this vector with x and y components multiplied by v.
   */
-  const Vector2 operator*(float v) const;
+  template <typename U> const Vector2 operator*(U v) const;
 
   /*!
   * \brief Return a copy of this vector with x and y components divided by v.
   * \return A copy of this vector with x and y components divided by v.
   */
-  const Vector2 operator/(float v) const;
+  template <typename U> const Vector2 operator/(U v) const;
 
   /*!
   * \brief Add the given value to x and y components of this vector.
   * \return This vector.
   */
-  Vector2 &operator+=(float v);
+  template <typename U> Vector2 &operator+=(U v);
 
   /*!
   * \brief Substract the given value from x and y components of this vector.
   * \return This vector.
   */
-  Vector2 &operator-=(float v);
+  template <typename U> Vector2 &operator-=(U v);
 
   /*!
   * \brief Multiply x and y components of this vector by the given value.
   * \return This vector.
   */
-  Vector2 &operator*=(float v);
+  template <typename U> Vector2 &operator*=(U v);
 
   /*!
   * \brief Divide x and y components of this vector by the given value.
   * \return This vector.
   */
-  Vector2 &operator/=(float v);
+  template <typename U> Vector2 &operator/=(U v);
 };
 
 typedef Vector2<char> Vector2c;

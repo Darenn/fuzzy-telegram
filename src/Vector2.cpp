@@ -114,6 +114,64 @@ Vector2<T> &Vector2<T>::operator/=(const Vector2<U> &v) {
   y /= v.y;
   return *this;
 }
+
+template <typename T>
+template <typename U>
+const Vector2<T> Vector2<T>::operator+(U value) const {
+  return Vector2<T>(x + static_cast<T>(value), y + static_cast<T>(value));
+}
+
+template <typename T>
+template <typename U>
+const Vector2<T> Vector2<T>::operator-(U value) const {
+  return Vector2<T>(x - static_cast<T>(value), y - static_cast<T>(value));
+}
+
+template <typename T>
+template <typename U>
+const Vector2<T> Vector2<T>::operator*(U value) const {
+  return Vector2<T>(x * static_cast<T>(value), y * static_cast<T>(value));
+}
+
+template <typename T>
+template <typename U>
+const Vector2<T> Vector2<T>::operator/(U value) const {
+  assert(value != 0);
+  return Vector2<T>(x / static_cast<T>(value), y / static_cast<T>(value));
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator+=(const U value) {
+  x += static_cast<T>(value);
+  y += static_cast<T>(value);
+  return *this;
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator-=(const U value) {
+  x -= static_cast<T>(value);
+  y -= static_cast<T>(value);
+  return *this;
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator*=(const U value) {
+  x *= static_cast<T>(value);
+  y *= static_cast<T>(value);
+  return *this;
+}
+
+template <typename T>
+template <typename U>
+Vector2<T> &Vector2<T>::operator/=(const U value) {
+  x /= static_cast<T>(value);
+  y /= static_cast<T>(value);
+  return *this;
+}
+
 // template class Vector2<int>;
 // template class Vector2<float>;
 };
