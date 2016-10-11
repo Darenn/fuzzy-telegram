@@ -324,8 +324,17 @@ public:
   Vector2 &operator/=(float v);
 };
 
+typedef Vector2<char> Vector2c;
+typedef Vector2<short int> Vector2si;
 typedef Vector2<int> Vector2i;
+typedef Vector2<long int> Vector2li;
 typedef Vector2<float> Vector2f;
+typedef Vector2<double> Vector2d;
+typedef Vector2<long double> Vector2ld;
+typedef Vector2<unsigned char> Vector2uc;
+typedef Vector2<unsigned short int> Vector2usi;
+typedef Vector2<unsigned int> Vector2ui;
+typedef Vector2<unsigned long int> Vector2uli;
 }
 
 #endif
