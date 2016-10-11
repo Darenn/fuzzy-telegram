@@ -68,6 +68,11 @@ const Vector2<T> Vector2<T>::operator+(const Vector2<T> &v) const {
   return Vector2<T>(x + v.x, y + v.y);
 }
 
+template <typename T>
+const Vector2<T> Vector2<T>::operator-(const Vector2<T> &v) const {
+  return Vector2<T>(x - v.x, y - v.y);
+}
+
 // template class Vector2<int>;
 // template class Vector2<float>;
 };

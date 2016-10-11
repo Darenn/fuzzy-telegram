@@ -179,11 +179,30 @@ TEST(BinaryArithmeticOperatorPlus, VectorsSameType) {
 }
 
 // TODO Would be nice to add two different vectors, but of which type should be
-// the result ? (maybe the larger type ?)
-TEST(DISABLED_BinaryArithmeticOperatorPlus, VectorsSameType) {
+// the result ? (maybe the larger type ?(the one which can contains without loss
+// the result))
+TEST(DISABLED_BinaryArithmeticOperatorPlus, VectorsDifferentType) {
   Vector2i v(20, 30);
   Vector2f v2(30.0, 400.0);
   // EXPECT_EQ(50.0, (v + v2).x);
   // EXPECT_EQ(430.0, (v + v2).y);
+}
+
+TEST(BinaryArithmeticOperatorMinus, VectorsSameType) {
+  Vector2i v(20, 30);
+  Vector2i v2(30, 400);
+  EXPECT_EQ(-10, (v - v2).x);
+  EXPECT_EQ(-370, (v - v2).y);
+}
+
+// TODO Would be nice to substract two different vectors, but of which type
+// should be
+// the result ? (maybe the larger type (the one which can contains without loss
+// the result)?)
+TEST(DISABLED_BinaryArithmeticOperatorMinus, VectorsDifferentType) {
+  Vector2i v(20, 30);
+  Vector2f v2(30.0, 400.0);
+  // EXPECT_EQ(-10.0, (v - v2).x);
+  // EXPECT_EQ(-370.0, (v - v2).y);
 }
 };
