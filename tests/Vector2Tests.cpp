@@ -196,7 +196,7 @@ TEST(BinaryArithmeticOperatorMinus, VectorsSameType) {
 }
 
 // TODO Would be nice to substract two different vectors, but of which type
-// should be
+// should be Same with all other operators.
 // the result ? (maybe the larger type (the one which can contains without loss
 // the result)?)
 TEST(DISABLED_BinaryArithmeticOperatorMinus, VectorsDifferentType) {
@@ -204,5 +204,19 @@ TEST(DISABLED_BinaryArithmeticOperatorMinus, VectorsDifferentType) {
   Vector2f v2(30.0, 400.0);
   // EXPECT_EQ(-10.0, (v - v2).x);
   // EXPECT_EQ(-370.0, (v - v2).y);
+}
+
+TEST(BinaryArithmeticOperatorMultiply, VectorsSameType) {
+  Vector2i v(2, 3);
+  Vector2i v2(3, 4);
+  EXPECT_EQ(6, (v * v2).x);
+  EXPECT_EQ(12, (v * v2).y);
+}
+
+TEST(BinaryArithmeticOperatorDivide, VectorsSameType) {
+  Vector2i v(6, 16);
+  Vector2i v2(3, 4);
+  EXPECT_EQ(2, (v / v2).x);
+  EXPECT_EQ(4, (v / v2).y);
 }
 };
