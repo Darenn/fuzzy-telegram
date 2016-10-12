@@ -136,11 +136,11 @@ public:
 
   /*!
   * \brief Return the distance between two vectors.
-  * \param from The first vector.
-  * \param to The second vector.
-  * \return The distance between from and to.
+  * \param v The first vector.
+  * \param u The second vector.
+  * \return The distance between v and u.
   */
-  static float distance(const Vector2 &from, const Vector2 &to);
+  static float distance(const Vector2 &v, const Vector2 &u);
 
   /*!
   * \brief Linearly interpolate between vectorA and vectorB by t.

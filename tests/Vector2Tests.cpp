@@ -97,9 +97,9 @@ TEST(Normalized, IntVector) {
 }
 
 TEST(Normalized, FloatVector) {
-  Vector2f v(Vector2f(-2, -2).normalized());
-  EXPECT_NEAR(-0.7f, v.x, 0.1f);
-  EXPECT_NEAR(-0.7f, v.y, 0.1f);
+  Vector2f v(Vector2f(2, 2).normalized());
+  EXPECT_NEAR(0.7f, v.x, 0.1f);
+  EXPECT_NEAR(0.7f, v.y, 0.1f);
 }
 
 TEST(CommonVectors, Up) {
@@ -169,6 +169,18 @@ TEST(Angle, NegativeVectors) {
   Vector2f v(3, 4);
   Vector2f u(-8, 6);
   EXPECT_EQ(90, Vector2f::angle(v, u));
+}
+
+TEST(Distance, FloatVectors) {
+  Vector2f v(3, 2);
+  Vector2f u(9, 7);
+  EXPECT_NEAR(7.8, Vector2f::distance(v, u), 0.1f);
+}
+
+TEST(Distance, FloatNegativeVectors) {
+  Vector2f v(-3, 5);
+  Vector2f u(7, -1);
+  EXPECT_NEAR(11.6, Vector2f::distance(v, u), 0.1f);
 }
 // Operators
 

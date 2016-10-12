@@ -33,8 +33,8 @@ template <typename T> void Vector2<T>::normalize() {
   float length = this->magnitude();
   x = x / length;
   y = y / length;
-  assert(x <= 1);
-  assert(y <= 1);
+  assert(x <= 1 && x >= -1);
+  assert(y <= 1 && y >= -1);
 }
 
 template <typename T> std::string Vector2<T>::toString() const {
@@ -83,6 +83,11 @@ template <typename T>
 float Vector2<T>::angle(const Vector2 &from, const Vector2 &to) {
   return acosf(Vector2<T>::dot(from.normalized(), to.normalized())) * 180 /
          M_PI;
+}
+
+template <typename T>
+float Vector2<T>::distance(const Vector2 &v, const Vector2 &u) {
+  return (v - u).magnitude();
 }
 
 template <typename T>
