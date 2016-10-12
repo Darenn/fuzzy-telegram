@@ -41,13 +41,13 @@ public:
   * \brief Return the length of this vector.
   * \return The length of this vector.
   */
-  float magnitude();
+  float magnitude() const;
 
   /*!
   * \brief Return the square length of this vector.
   * \return The square length of this vector.
   */
-  float squaredMagnitude();
+  float squaredMagnitude() const;
 
   /*!
   * \brief Normalize this vector;
@@ -59,6 +59,12 @@ public:
   * \return A string representation of a vector : "(x, y)".
   */
   std::string toString() const;
+
+  /*!
+  * \brief Return A copy of this vector with a magnitude of 1.
+  * \return A copy of this vector with a magnitude of 1.
+  */
+  Vector2 normalized() const;
 
   /*!
   * \brief Set the x and y value of this vector.
@@ -104,10 +110,12 @@ public:
   static Vector2 one();
 
   /*!
-  * \brief Return A copy of this vector with a magnitude of 1.
-  * \return A copy of this vector with a magnitude of 1.
+  * \brief Return the dot product of two vectors.
+  * \param vector1 The first vector.
+  * \param vector2 The second vector.
+  * \return The dot product of vector1 and vector 2
   */
-  Vector2 normalized();
+  static float dot(const Vector2 &vector1, const Vector2 &vector2);
 
   /*!
   * \brief Return the angle in degrees between two vectors.
@@ -133,14 +141,6 @@ public:
   * \return The distance between from and to.
   */
   static float distance(const Vector2 &from, const Vector2 &to);
-
-  /*!
-  * \brief Return the dot product of two vectors.
-  * \param vector1 The first vector.
-  * \param vector2 The second vector.
-  * \return The dot product of vector1 and vector 2
-  */
-  static float dot(const Vector2 &vector1, const Vector2 &vector2);
 
   /*!
   * \brief Linearly interpolate between vectorA and vectorB by t.

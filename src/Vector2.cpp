@@ -21,11 +21,11 @@ Vector2<T>::Vector2(const Vector2<U> &vector)
 
 template <typename T> Vector2<T>::~Vector2<T>() {}
 
-template <typename T> float Vector2<T>::magnitude() {
+template <typename T> float Vector2<T>::magnitude() const {
   return sqrt(x * x + y * y);
 }
 
-template <typename T> float Vector2<T>::squaredMagnitude() {
+template <typename T> float Vector2<T>::squaredMagnitude() const {
   return x * x + y * y;
 }
 
@@ -33,6 +33,8 @@ template <typename T> void Vector2<T>::normalize() {
   float length = this->magnitude();
   x = x / length;
   y = y / length;
+  assert(x <= 1);
+  assert(y <= 1);
 }
 
 template <typename T> std::string Vector2<T>::toString() const {
@@ -48,7 +50,7 @@ void Vector2<T>::set(U xValue, V yValue) {
   y = static_cast<T>(yValue);
 }
 
-template <typename T> Vector2<T> Vector2<T>::normalized() {
+template <typename T> Vector2<T> Vector2<T>::normalized() const {
   Vector2<T> v(*this);
   v.normalize();
   return v;
@@ -71,6 +73,17 @@ template <typename T> Vector2<T> Vector2<T>::right() {
 template <typename T> Vector2<T> Vector2<T>::zero() { return Vector2<T>(0, 0); }
 
 template <typename T> Vector2<T> Vector2<T>::one() { return Vector2<T>(1, 1); }
+
+template <typename T>
+float Vector2<T>::dot(const Vector2 &vector1, const Vector2 &vector2) {
+  return vector1.x * vector2.x + vector1.y * vector2.y;
+}
+
+template <typename T>
+float Vector2<T>::angle(const Vector2 &from, const Vector2 &to) {
+  return acosf(Vector2<T>::dot(from.normalized(), to.normalized())) * 180 /
+         M_PI;
+}
 
 template <typename T>
 const T Vector2<T>::operator[](const std::size_t i) const {

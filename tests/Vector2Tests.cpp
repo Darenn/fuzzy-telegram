@@ -152,6 +152,24 @@ TEST(Set, DifferentTypes) {
   EXPECT_EQ(2, v.x);
   EXPECT_EQ(2, v.y);
 }
+
+TEST(DotProduct, NegativeVectors) {
+  Vector2f v(-4, -9);
+  Vector2f v2(-1, 2);
+  EXPECT_EQ(-14, Vector2f::dot(v, v2));
+}
+
+TEST(Angle, PositiveVectors) {
+  Vector2f v(3, 0);
+  Vector2f u(5, 5);
+  EXPECT_EQ(45, Vector2f::angle(v, u));
+}
+
+TEST(Angle, NegativeVectors) {
+  Vector2f v(3, 4);
+  Vector2f u(-8, 6);
+  EXPECT_EQ(90, Vector2f::angle(v, u));
+}
 // Operators
 
 TEST(Stream, StreamInsertion) {
