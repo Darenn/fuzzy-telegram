@@ -1,7 +1,9 @@
 #include "Vector2.hpp"
 #include <cassert>
 #include <cmath>
+#include <sstream>
 #include <stdexcept>
+#include <string>
 
 namespace fuzzyTelegram {
 
@@ -25,6 +27,18 @@ template <typename T> float Vector2<T>::magnitude() {
 
 template <typename T> float Vector2<T>::squaredMagnitude() {
   return x * x + y * y;
+}
+
+template <typename T> void Vector2<T>::normalize() {
+  float length = this->magnitude();
+  x = x / length;
+  y = y / length;
+}
+
+template <typename T> std::string Vector2<T>::toString() const {
+  std::stringstream s;
+  s << *this;
+  return s.str();
 }
 
 template <typename T>

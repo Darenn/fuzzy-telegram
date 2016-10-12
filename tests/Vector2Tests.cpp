@@ -76,6 +76,11 @@ TEST(SquaredMagnitude, NegativeVector) {
   EXPECT_EQ(50, v.squaredMagnitude());
 }
 
+TEST(ToString, PositiveVectorFloat) {
+  Vector2f v(2.57, -34.9);
+  std::string res = "(2.57, -34.9)";
+  EXPECT_STREQ(res.c_str(), v.toString().c_str());
+}
 // Operators
 
 TEST(Stream, StreamInsertion) {
