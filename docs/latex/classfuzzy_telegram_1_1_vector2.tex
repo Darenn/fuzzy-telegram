@@ -1,0 +1,821 @@
+\hypertarget{classfuzzy_telegram_1_1_vector2}{}\section{fuzzy\+Telegram\+:\+:Vector2$<$ T $>$ Class Template Reference}
+\label{classfuzzy_telegram_1_1_vector2}\index{fuzzy\+Telegram\+::\+Vector2$<$ T $>$@{fuzzy\+Telegram\+::\+Vector2$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfuzzy_telegram_1_1_vector2_ad133459d85743e14f62616f2f2631bd9}{Vector2} (void)\hypertarget{classfuzzy_telegram_1_1_vector2_ad133459d85743e14f62616f2f2631bd9}{}\label{classfuzzy_telegram_1_1_vector2_ad133459d85743e14f62616f2f2631bd9}
+
+\begin{DoxyCompactList}\small\item\em Initialize to a Vector2(0, 0). \end{DoxyCompactList}\item 
+\hyperlink{classfuzzy_telegram_1_1_vector2_ae8cc8d26783d6b2d8cbdb3f2cea4c232}{Vector2} (const T x, const T y)
+\begin{DoxyCompactList}\small\item\em Initiliaze to a Vector2(x, y). \end{DoxyCompactList}\item 
+\hyperlink{classfuzzy_telegram_1_1_vector2_a6077e7a8421118e6aa373d64bedd17b1}{Vector2} (const T xy)
+\begin{DoxyCompactList}\small\item\em Initiliaze to a Vector2(xy, xy). \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2_a79bc1f0acbb337198bb5cd65233b73e2}{Vector2} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Make a copy of the vector given (could be an other type). \end{DoxyCompactList}\item 
+float \hyperlink{classfuzzy_telegram_1_1_vector2_ab0e054c6edd49d3ae03046f3dd29d799}{magnitude} () const 
+\begin{DoxyCompactList}\small\item\em Return the length of this vector. \end{DoxyCompactList}\item 
+float \hyperlink{classfuzzy_telegram_1_1_vector2_afbf03a36391a43ead35db0f5586f02e0}{squared\+Magnitude} () const 
+\begin{DoxyCompactList}\small\item\em Return the square length of this vector. \end{DoxyCompactList}\item 
+void \hyperlink{classfuzzy_telegram_1_1_vector2_a916f54c68020b50e7a5506ca24a5d426}{normalize} ()\hypertarget{classfuzzy_telegram_1_1_vector2_a916f54c68020b50e7a5506ca24a5d426}{}\label{classfuzzy_telegram_1_1_vector2_a916f54c68020b50e7a5506ca24a5d426}
+
+\begin{DoxyCompactList}\small\item\em Normalize this vector;. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classfuzzy_telegram_1_1_vector2_ada37aeefbcdec3a732dd7d93fa82ca7f}{to\+String} () const 
+\begin{DoxyCompactList}\small\item\em Return a string representation of a vector \+: \char`\"{}(x, y)\char`\"{}. \end{DoxyCompactList}\item 
+\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_af54abf8502462326ae7765f79f01161b}{normalized} () const 
+\begin{DoxyCompactList}\small\item\em Return A copy of this vector with a magnitude of 1. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U , typename V $>$ }\\void \hyperlink{classfuzzy_telegram_1_1_vector2_a02eb86e3b78dda269af45c01d488dfb5}{set} (U x\+Value, V y\+Value)
+\begin{DoxyCompactList}\small\item\em Set the x and y value of this vector. \end{DoxyCompactList}\item 
+const T \hyperlink{classfuzzy_telegram_1_1_vector2_a132d78d0f26155006d88c1c06248e5ac}{operator\mbox{[}$\,$\mbox{]}} (const std\+::size\+\_\+t i) const 
+\begin{DoxyCompactList}\small\item\em Return the x (i == 0) or y (i == 1) components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a49d6c0bf180b3ad73571a2d782eda77c}{operator=} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Set x and y of this to x and y of the given vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_aac69bf7151626c5c15783274aa2cf9e7}{operator=} (const U \&value)
+\begin{DoxyCompactList}\small\item\em Set x and y of this to the given value. \end{DoxyCompactList}\item 
+\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_aab199326b19072cee92d5abdcf859abf}{operator-\/} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the inverse of this vector \char`\"{}(-\/x, -\/y)\char`\"{}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\bool \hyperlink{classfuzzy_telegram_1_1_vector2_a98520a9ab6e5c475b0229afe5a9e0db5}{operator==} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Check if this vector is equal to another. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\bool \hyperlink{classfuzzy_telegram_1_1_vector2_ae4b40df1e0ae2599a3fe928e4a5db9ba}{operator!=} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Check if this vector is different from another. \end{DoxyCompactList}\item 
+const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_abb6db853bfe0c0c49fd69eae7ee6244c}{operator+} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v) const 
+\begin{DoxyCompactList}\small\item\em Add this vector to another. \end{DoxyCompactList}\item 
+const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a5bc16d37025862c90580384b3ddd4653}{operator-\/} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v) const 
+\begin{DoxyCompactList}\small\item\em Substract this vector to another. \end{DoxyCompactList}\item 
+const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a9649faaaf04d1baa4de899d03aac4bd9}{operator$\ast$} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v) const 
+\begin{DoxyCompactList}\small\item\em Multiply this vector to another. \end{DoxyCompactList}\item 
+const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a0d4c54736eb4a92fde2937699d472592}{operator/} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v) const 
+\begin{DoxyCompactList}\small\item\em Divide this vector to another. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a73a402eb83722b01419857d1a0d06fb2}{operator+=} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Add x and y components of the other vector to x and y components of this vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a5aeb8497975097a33cebda7485f23abc}{operator-\/=} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Substract x and y components of the other vector from x and y components of this vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_af5efbd8d8858e8d1d4bf051f1a52280d}{operator$\ast$=} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Multiply x and y components of the this vector by x and y components of the other vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_ac90357fe51da2902de2961ff47f68c3c}{operator/=} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}$<$ U $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Divide x and y components of the this vector by x and y components of the other vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_ae2efd0ca55306f96980fbe17335ea54a}{operator+} (U value) const 
+\begin{DoxyCompactList}\small\item\em Return a copy of this vector with v added to x and y components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_ae1bd17b071382d3d0a8fece1e0590c5d}{operator-\/} (U value) const 
+\begin{DoxyCompactList}\small\item\em Return a copy of this vector with v substracted from x and y components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a9cf245fd13bb370ce4036a4ea5fd3636}{operator$\ast$} (U v) const 
+\begin{DoxyCompactList}\small\item\em Return a copy of this vector with x and y components multiplied by v. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a37614437335d60eb4aa508eabf4ffca3}{operator/} (U v) const 
+\begin{DoxyCompactList}\small\item\em Return a copy of this vector with x and y components divided by v. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a70505acd518ec61f029155ae7b333ac1}{operator+=} (U v)
+\begin{DoxyCompactList}\small\item\em Add the given value to x and y components of this vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a84540b23cc68ae7a5b62ba0379bac85b}{operator-\/=} (U v)
+\begin{DoxyCompactList}\small\item\em Substract the given value from x and y components of this vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a0b2852b7f30db36d4e0293c1eabb7e99}{operator$\ast$=} (U v)
+\begin{DoxyCompactList}\small\item\em Multiply x and y components of this vector by the given value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \& \hyperlink{classfuzzy_telegram_1_1_vector2_a753b33c65bfd6257dfef84fc4f14c357}{operator/=} (U v)
+\begin{DoxyCompactList}\small\item\em Divide x and y components of this vector by the given value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_aadd7753892849f0b2c153c5722994e09}{up} ()
+\begin{DoxyCompactList}\small\item\em Return a Vector2(0, 1). \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a322f8c638d03d93a9a2895bc17cf15e8}{down} ()
+\begin{DoxyCompactList}\small\item\em Return a \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}(0, -\/1). \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a1e27ab02bba93378904944a97c14b63a}{left} ()
+\begin{DoxyCompactList}\small\item\em Return a \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}(-\/1, 0). \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_ac7cad3f58f45e55e2ff3f4c7519aa40e}{right} ()
+\begin{DoxyCompactList}\small\item\em Return a Vector2(1, 0). \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_ac9a6d24cffa359d2c340394a9341946f}{zero} ()
+\begin{DoxyCompactList}\small\item\em Return a Vector(0, 0). \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a29ec891b5228e31b49d3e78f6ed3627c}{one} ()
+\begin{DoxyCompactList}\small\item\em Return a Vector2(1, 1). \end{DoxyCompactList}\item 
+static float \hyperlink{classfuzzy_telegram_1_1_vector2_abf357a902d0dea8bc2315d6a13bbd923}{dot} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&vector1, const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&vector2)
+\begin{DoxyCompactList}\small\item\em Return the dot product of two vectors. \end{DoxyCompactList}\item 
+static float \hyperlink{classfuzzy_telegram_1_1_vector2_a42831e50aa15c790080b9e7aa9757303}{angle} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&from, const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&to)
+\begin{DoxyCompactList}\small\item\em Return the angle in degrees between two vectors. \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a289f71dc080eb7862d7af4e99ef9830e}{clamp\+Magnitude} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&vector, float max\+Length)
+\begin{DoxyCompactList}\small\item\em Return A copy of the vector with its magnitude clamped to max\+Length. \end{DoxyCompactList}\item 
+static float \hyperlink{classfuzzy_telegram_1_1_vector2_a26345f59dedf2f8329bdabb1fa85b0ac}{distance} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v, const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&u)
+\begin{DoxyCompactList}\small\item\em Return the distance between two vectors. \end{DoxyCompactList}\item 
+static \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \hyperlink{classfuzzy_telegram_1_1_vector2_a9df7c81fb42b8cc86a7363f85bc877e9}{lerp} (const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&vectorA, const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&vectorB, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolate between vectorA and vectorB by t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries x}\hypertarget{classfuzzy_telegram_1_1_vector2_a7d2ec5e647c0f305eac5daab78d958b6}{}\label{classfuzzy_telegram_1_1_vector2_a7d2ec5e647c0f305eac5daab78d958b6}
+
+\item 
+T {\bfseries y}\hypertarget{classfuzzy_telegram_1_1_vector2_ababc606f79939def0b456fdb6efce639}{}\label{classfuzzy_telegram_1_1_vector2_ababc606f79939def0b456fdb6efce639}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classfuzzy_telegram_1_1_vector2_a42468f8bdb8479b6fb73b56799de28fb}{operator$<$$<$} (std\+::ostream \&output, const \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v)
+\begin{DoxyCompactList}\small\item\em Insert into the output stream the vector\textquotesingle{}s representation \char`\"{}(x, y)\char`\"{}. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{classfuzzy_telegram_1_1_vector2_a8533f7e5d39fb61d3c737c41a6fd1710}{operator$>$$>$} (std\+::istream \&input, \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2} \&v)
+\begin{DoxyCompactList}\small\item\em Extract the x and y components from the input stream into v. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!Vector2@{Vector2}}
+\index{Vector2@{Vector2}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{Vector2(const T x, const T y)}{Vector2(const T x, const T y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::{\bf Vector2} (
+\begin{DoxyParamCaption}
+\item[{const T}]{x, }
+\item[{const T}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_ae8cc8d26783d6b2d8cbdb3f2cea4c232}{}\label{classfuzzy_telegram_1_1_vector2_ae8cc8d26783d6b2d8cbdb3f2cea4c232}
+
+
+Initiliaze to a Vector2(x, y). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x value of the vector. \\
+\hline
+{\em y} & The y value of the vector; \\
+\hline
+\end{DoxyParams}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!Vector2@{Vector2}}
+\index{Vector2@{Vector2}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{Vector2(const T xy)}{Vector2(const T xy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::{\bf Vector2} (
+\begin{DoxyParamCaption}
+\item[{const T}]{xy}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a6077e7a8421118e6aa373d64bedd17b1}{}\label{classfuzzy_telegram_1_1_vector2_a6077e7a8421118e6aa373d64bedd17b1}
+
+
+Initiliaze to a Vector2(xy, xy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The value of x and y components. \\
+\hline
+\end{DoxyParams}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!Vector2@{Vector2}}
+\index{Vector2@{Vector2}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{Vector2(const Vector2$<$ U $>$ \&vector)}{Vector2(const Vector2< U > &vector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::{\bf Vector2} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a79bc1f0acbb337198bb5cd65233b73e2}{}\label{classfuzzy_telegram_1_1_vector2_a79bc1f0acbb337198bb5cd65233b73e2}
+
+
+Make a copy of the vector given (could be an other type). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & A reference to the vector to copy. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!angle@{angle}}
+\index{angle@{angle}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{angle(const Vector2 \&from, const Vector2 \&to)}{angle(const Vector2 &from, const Vector2 &to)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static float {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::angle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{from, }
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a42831e50aa15c790080b9e7aa9757303}{}\label{classfuzzy_telegram_1_1_vector2_a42831e50aa15c790080b9e7aa9757303}
+
+
+Return the angle in degrees between two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & Where the angle starts. \\
+\hline
+{\em to} & Where the angle ends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle in degrees between from and to. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!clamp\+Magnitude@{clamp\+Magnitude}}
+\index{clamp\+Magnitude@{clamp\+Magnitude}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{clamp\+Magnitude(const Vector2 \&vector, float max\+Length)}{clampMagnitude(const Vector2 &vector, float maxLength)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::clamp\+Magnitude (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{vector, }
+\item[{float}]{max\+Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a289f71dc080eb7862d7af4e99ef9830e}{}\label{classfuzzy_telegram_1_1_vector2_a289f71dc080eb7862d7af4e99ef9830e}
+
+
+Return A copy of the vector with its magnitude clamped to max\+Length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector we want to clamp. \\
+\hline
+{\em max\+Length} & The maximum length magnitude. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A copy of vector with its magnitude clamped to max\+Length. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!distance@{distance}}
+\index{distance@{distance}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{distance(const Vector2 \&v, const Vector2 \&u)}{distance(const Vector2 &v, const Vector2 &u)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static float {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::distance (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{v, }
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a26345f59dedf2f8329bdabb1fa85b0ac}{}\label{classfuzzy_telegram_1_1_vector2_a26345f59dedf2f8329bdabb1fa85b0ac}
+
+
+Return the distance between two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The first vector. \\
+\hline
+{\em u} & The second vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between v and u. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!dot@{dot}}
+\index{dot@{dot}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{dot(const Vector2 \&vector1, const Vector2 \&vector2)}{dot(const Vector2 &vector1, const Vector2 &vector2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static float {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{vector1, }
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_abf357a902d0dea8bc2315d6a13bbd923}{}\label{classfuzzy_telegram_1_1_vector2_abf357a902d0dea8bc2315d6a13bbd923}
+
+
+Return the dot product of two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & The first vector. \\
+\hline
+{\em vector2} & The second vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product of vector1 and vector 2 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!down@{down}}
+\index{down@{down}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{down()}{down()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a322f8c638d03d93a9a2895bc17cf15e8}{}\label{classfuzzy_telegram_1_1_vector2_a322f8c638d03d93a9a2895bc17cf15e8}
+
+
+Return a \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}(0, -\/1). 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}(0, -\/1). 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!left@{left}}
+\index{left@{left}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{left()}{left()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a1e27ab02bba93378904944a97c14b63a}{}\label{classfuzzy_telegram_1_1_vector2_a1e27ab02bba93378904944a97c14b63a}
+
+
+Return a \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}(-\/1, 0). 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classfuzzy_telegram_1_1_vector2}{Vector2}(-\/1, 0). 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!lerp@{lerp}}
+\index{lerp@{lerp}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{lerp(const Vector2 \&vector\+A, const Vector2 \&vector\+B, float t)}{lerp(const Vector2 &vectorA, const Vector2 &vectorB, float t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::lerp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{vectorA, }
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{vectorB, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a9df7c81fb42b8cc86a7363f85bc877e9}{}\label{classfuzzy_telegram_1_1_vector2_a9df7c81fb42b8cc86a7363f85bc877e9}
+
+
+Linearly interpolate between vectorA and vectorB by t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vectorA} & The first vector. \\
+\hline
+{\em vectorB} & The second vector. \\
+\hline
+{\em t} & How far interpolation is done. Clamped between 0 and 1. When t = 0, return vectorA, when t = 1 return vectorB, when t = 0.\+5 return the midpoint of vectorA and vectorB. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector interpolated. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{magnitude() const }{magnitude() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ float {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_ab0e054c6edd49d3ae03046f3dd29d799}{}\label{classfuzzy_telegram_1_1_vector2_ab0e054c6edd49d3ae03046f3dd29d799}
+
+
+Return the length of this vector. 
+
+\begin{DoxyReturn}{Returns}
+The length of this vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!normalized@{normalized}}
+\index{normalized@{normalized}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{normalized() const }{normalized() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_af54abf8502462326ae7765f79f01161b}{}\label{classfuzzy_telegram_1_1_vector2_af54abf8502462326ae7765f79f01161b}
+
+
+Return A copy of this vector with a magnitude of 1. 
+
+\begin{DoxyReturn}{Returns}
+A copy of this vector with a magnitude of 1. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!one@{one}}
+\index{one@{one}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{one()}{one()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::one (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a29ec891b5228e31b49d3e78f6ed3627c}{}\label{classfuzzy_telegram_1_1_vector2_a29ec891b5228e31b49d3e78f6ed3627c}
+
+
+Return a Vector2(1, 1). 
+
+\begin{DoxyReturn}{Returns}
+A Vector2(1, 1). 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator"!=(const Vector2$<$ U $>$ \&v) const }{operator!=(const Vector2< U > &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ bool {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_ae4b40df1e0ae2599a3fe928e4a5db9ba}{}\label{classfuzzy_telegram_1_1_vector2_ae4b40df1e0ae2599a3fe928e4a5db9ba}
+
+
+Check if this vector is different from another. 
+
+\begin{DoxyReturn}{Returns}
+true if x and y components of both vectors are different. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Vector2 \&v) const }{operator*(const Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a9649faaaf04d1baa4de899d03aac4bd9}{}\label{classfuzzy_telegram_1_1_vector2_a9649faaaf04d1baa4de899d03aac4bd9}
+
+
+Multiply this vector to another. 
+
+\begin{DoxyReturn}{Returns}
+A vector with x and y components of this vector multiplied by x and y components of the other. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator$\ast$(\+U v) const }{operator*(U v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{U}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a9cf245fd13bb370ce4036a4ea5fd3636}{}\label{classfuzzy_telegram_1_1_vector2_a9cf245fd13bb370ce4036a4ea5fd3636}
+
+
+Return a copy of this vector with x and y components multiplied by v. 
+
+\begin{DoxyReturn}{Returns}
+A copy of this vector with x and y components multiplied by v. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator$\ast$=(const Vector2$<$ U $>$ \&v)}{operator*=(const Vector2< U > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_af5efbd8d8858e8d1d4bf051f1a52280d}{}\label{classfuzzy_telegram_1_1_vector2_af5efbd8d8858e8d1d4bf051f1a52280d}
+
+
+Multiply x and y components of the this vector by x and y components of the other vector. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator$\ast$=(\+U v)}{operator*=(U v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{U}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a0b2852b7f30db36d4e0293c1eabb7e99}{}\label{classfuzzy_telegram_1_1_vector2_a0b2852b7f30db36d4e0293c1eabb7e99}
+
+
+Multiply x and y components of this vector by the given value. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator+@{operator+}}
+\index{operator+@{operator+}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator+(const Vector2 \&v) const }{operator+(const Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_abb6db853bfe0c0c49fd69eae7ee6244c}{}\label{classfuzzy_telegram_1_1_vector2_abb6db853bfe0c0c49fd69eae7ee6244c}
+
+
+Add this vector to another. 
+
+\begin{DoxyReturn}{Returns}
+A vector with x and y components of this vector added to x and y components of the other. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator+@{operator+}}
+\index{operator+@{operator+}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator+(\+U value) const }{operator+(U value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{U}]{value}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_ae2efd0ca55306f96980fbe17335ea54a}{}\label{classfuzzy_telegram_1_1_vector2_ae2efd0ca55306f96980fbe17335ea54a}
+
+
+Return a copy of this vector with v added to x and y components. 
+
+\begin{DoxyReturn}{Returns}
+A copy of this vector with v added to x and y components. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator+=(const Vector2$<$ U $>$ \&v)}{operator+=(const Vector2< U > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a73a402eb83722b01419857d1a0d06fb2}{}\label{classfuzzy_telegram_1_1_vector2_a73a402eb83722b01419857d1a0d06fb2}
+
+
+Add x and y components of the other vector to x and y components of this vector. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator+=(\+U v)}{operator+=(U v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{U}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a70505acd518ec61f029155ae7b333ac1}{}\label{classfuzzy_telegram_1_1_vector2_a70505acd518ec61f029155ae7b333ac1}
+
+
+Add the given value to x and y components of this vector. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator-\/(void) const }{operator-(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_aab199326b19072cee92d5abdcf859abf}{}\label{classfuzzy_telegram_1_1_vector2_aab199326b19072cee92d5abdcf859abf}
+
+
+Return the inverse of this vector \char`\"{}(-\/x, -\/y)\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+The inverse of this vector.. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator-\/(const Vector2 \&v) const }{operator-(const Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a5bc16d37025862c90580384b3ddd4653}{}\label{classfuzzy_telegram_1_1_vector2_a5bc16d37025862c90580384b3ddd4653}
+
+
+Substract this vector to another. 
+
+\begin{DoxyReturn}{Returns}
+A vector with x and y components of this vector substracted from x and y components of the other. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator-\/(\+U value) const }{operator-(U value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{U}]{value}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_ae1bd17b071382d3d0a8fece1e0590c5d}{}\label{classfuzzy_telegram_1_1_vector2_ae1bd17b071382d3d0a8fece1e0590c5d}
+
+
+Return a copy of this vector with v substracted from x and y components. 
+
+\begin{DoxyReturn}{Returns}
+A copy of this vector with v substracted from x and y components. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator-\/=(const Vector2$<$ U $>$ \&v)}{operator-=(const Vector2< U > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a5aeb8497975097a33cebda7485f23abc}{}\label{classfuzzy_telegram_1_1_vector2_a5aeb8497975097a33cebda7485f23abc}
+
+
+Substract x and y components of the other vector from x and y components of this vector. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator-\/=(\+U v)}{operator-=(U v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{U}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a84540b23cc68ae7a5b62ba0379bac85b}{}\label{classfuzzy_telegram_1_1_vector2_a84540b23cc68ae7a5b62ba0379bac85b}
+
+
+Substract the given value from x and y components of this vector. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator/@{operator/}}
+\index{operator/@{operator/}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator/(const Vector2 \&v) const }{operator/(const Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a0d4c54736eb4a92fde2937699d472592}{}\label{classfuzzy_telegram_1_1_vector2_a0d4c54736eb4a92fde2937699d472592}
+
+
+Divide this vector to another. 
+
+\begin{DoxyReturn}{Returns}
+A vector with x and y components of this vector divided by x and y components of the other. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator/@{operator/}}
+\index{operator/@{operator/}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator/(\+U v) const }{operator/(U v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ const {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{U}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a37614437335d60eb4aa508eabf4ffca3}{}\label{classfuzzy_telegram_1_1_vector2_a37614437335d60eb4aa508eabf4ffca3}
+
+
+Return a copy of this vector with x and y components divided by v. 
+
+\begin{DoxyReturn}{Returns}
+A copy of this vector with x and y components divided by v. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator/=(const Vector2$<$ U $>$ \&v)}{operator/=(const Vector2< U > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_ac90357fe51da2902de2961ff47f68c3c}{}\label{classfuzzy_telegram_1_1_vector2_ac90357fe51da2902de2961ff47f68c3c}
+
+
+Divide x and y components of the this vector by x and y components of the other vector. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator/=(\+U v)}{operator/=(U v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{U}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a753b33c65bfd6257dfef84fc4f14c357}{}\label{classfuzzy_telegram_1_1_vector2_a753b33c65bfd6257dfef84fc4f14c357}
+
+
+Divide x and y components of this vector by the given value. 
+
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator=@{operator=}}
+\index{operator=@{operator=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator=(const Vector2$<$ U $>$ \&v)}{operator=(const Vector2< U > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a49d6c0bf180b3ad73571a2d782eda77c}{}\label{classfuzzy_telegram_1_1_vector2_a49d6c0bf180b3ad73571a2d782eda77c}
+
+
+Set x and y of this to x and y of the given vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector this is assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator=@{operator=}}
+\index{operator=@{operator=}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator=(const U \&value)}{operator=(const U &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ {\bf Vector2}\& {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const U \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_aac69bf7151626c5c15783274aa2cf9e7}{}\label{classfuzzy_telegram_1_1_vector2_aac69bf7151626c5c15783274aa2cf9e7}
+
+
+Set x and y of this to the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The new value of x and y of this. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator==@{operator==}}
+\index{operator==@{operator==}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator==(const Vector2$<$ U $>$ \&v) const }{operator==(const Vector2< U > &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U $>$ bool {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2}$<$ U $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a98520a9ab6e5c475b0229afe5a9e0db5}{}\label{classfuzzy_telegram_1_1_vector2_a98520a9ab6e5c475b0229afe5a9e0db5}
+
+
+Check if this vector is equal to another. 
+
+\begin{DoxyReturn}{Returns}
+true if x and y components of both vectors are equal. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator[](const std\+::size\+\_\+t i) const }{operator[](const std::size_t i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const T {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const std\+::size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_a132d78d0f26155006d88c1c06248e5ac}{}\label{classfuzzy_telegram_1_1_vector2_a132d78d0f26155006d88c1c06248e5ac}
+
+
+Return the x (i == 0) or y (i == 1) components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & L\textquotesingle{}index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The x component if i == 0, y if i == 1. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Index i is out of range if i $>$ 1 or i $<$ 0. \\
+\hline
+\end{DoxyExceptions}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!right@{right}}
+\index{right@{right}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{right()}{right()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_ac7cad3f58f45e55e2ff3f4c7519aa40e}{}\label{classfuzzy_telegram_1_1_vector2_ac7cad3f58f45e55e2ff3f4c7519aa40e}
+
+
+Return a Vector2(1, 0). 
+
+\begin{DoxyReturn}{Returns}
+A Vector2(1, 0). 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!set@{set}}
+\index{set@{set}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{set(\+U x\+Value, V y\+Value)}{set(U xValue, V yValue)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U , typename V $>$ void {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::set (
+\begin{DoxyParamCaption}
+\item[{U}]{x\+Value, }
+\item[{V}]{y\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{classfuzzy_telegram_1_1_vector2_a02eb86e3b78dda269af45c01d488dfb5}{}\label{classfuzzy_telegram_1_1_vector2_a02eb86e3b78dda269af45c01d488dfb5}
+
+
+Set the x and y value of this vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Value} & The x value of the vector. \\
+\hline
+{\em y\+Value} & The y value of the vector. \\
+\hline
+\end{DoxyParams}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!squared\+Magnitude@{squared\+Magnitude}}
+\index{squared\+Magnitude@{squared\+Magnitude}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{squared\+Magnitude() const }{squaredMagnitude() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ float {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::squared\+Magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_afbf03a36391a43ead35db0f5586f02e0}{}\label{classfuzzy_telegram_1_1_vector2_afbf03a36391a43ead35db0f5586f02e0}
+
+
+Return the square length of this vector. 
+
+\begin{DoxyReturn}{Returns}
+The square length of this vector. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{to\+String() const }{toString() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\+::string {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classfuzzy_telegram_1_1_vector2_ada37aeefbcdec3a732dd7d93fa82ca7f}{}\label{classfuzzy_telegram_1_1_vector2_ada37aeefbcdec3a732dd7d93fa82ca7f}
+
+
+Return a string representation of a vector \+: \char`\"{}(x, y)\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of a vector \+: \char`\"{}(x, y)\char`\"{}. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!up@{up}}
+\index{up@{up}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{up()}{up()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_aadd7753892849f0b2c153c5722994e09}{}\label{classfuzzy_telegram_1_1_vector2_aadd7753892849f0b2c153c5722994e09}
+
+
+Return a Vector2(0, 1). 
+
+\begin{DoxyReturn}{Returns}
+A Vector2(0, 1). 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!zero@{zero}}
+\index{zero@{zero}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{zero()}{zero()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Vector2} {\bf fuzzy\+Telegram\+::\+Vector2}$<$ T $>$\+::zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfuzzy_telegram_1_1_vector2_ac9a6d24cffa359d2c340394a9341946f}{}\label{classfuzzy_telegram_1_1_vector2_ac9a6d24cffa359d2c340394a9341946f}
+
+
+Return a Vector(0, 0). 
+
+\begin{DoxyReturn}{Returns}
+A Vector2(0, 0). 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf Vector2}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a42468f8bdb8479b6fb73b56799de28fb}{}\label{classfuzzy_telegram_1_1_vector2_a42468f8bdb8479b6fb73b56799de28fb}
+
+
+Insert into the output stream the vector\textquotesingle{}s representation \char`\"{}(x, y)\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & The output stream. \\
+\hline
+{\em v} & The vector to insert into output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A The output stream. 
+\end{DoxyReturn}
+\index{fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!fuzzy\+Telegram\+::\+Vector2@{fuzzy\+Telegram\+::\+Vector2}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Vector2}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classfuzzy_telegram_1_1_vector2_a8533f7e5d39fb61d3c737c41a6fd1710}{}\label{classfuzzy_telegram_1_1_vector2_a8533f7e5d39fb61d3c737c41a6fd1710}
+
+
+Extract the x and y components from the input stream into v. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input stream. \\
+\hline
+{\em v} & The vector in which we insert x and y components. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Vector2.\+hpp\end{DoxyCompactItemize}
