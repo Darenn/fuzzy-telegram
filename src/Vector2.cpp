@@ -54,6 +54,24 @@ template <typename T> Vector2<T> Vector2<T>::normalized() {
   return v;
 }
 
+template <typename T> Vector2<T> Vector2<T>::up() { return Vector2<T>(0, 1); }
+
+template <typename T> Vector2<T> Vector2<T>::down() {
+  return Vector2<T>(0, -1);
+}
+
+template <typename T> Vector2<T> Vector2<T>::left() {
+  return Vector2<T>(-1, 0);
+}
+
+template <typename T> Vector2<T> Vector2<T>::right() {
+  return Vector2<T>(1, 0);
+}
+
+template <typename T> Vector2<T> Vector2<T>::zero() { return Vector2<T>(0, 0); }
+
+template <typename T> Vector2<T> Vector2<T>::one() { return Vector2<T>(1, 1); }
+
 template <typename T>
 const T Vector2<T>::operator[](const std::size_t i) const {
   if (i == 0)

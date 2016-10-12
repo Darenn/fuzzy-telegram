@@ -102,6 +102,42 @@ TEST(Normalized, FloatVector) {
   EXPECT_NEAR(-0.7f, v.y, 0.1f);
 }
 
+TEST(CommonVectors, Up) {
+  Vector2f v = Vector2f::up();
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(1, v.y);
+}
+
+TEST(CommonVectors, Down) {
+  Vector2f v = Vector2f::down();
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(-1, v.y);
+}
+
+TEST(CommonVectors, Left) {
+  Vector2f v = Vector2f::left();
+  EXPECT_EQ(-1, v.x);
+  EXPECT_EQ(0, v.y);
+}
+
+TEST(CommonVectors, Right) {
+  Vector2f v = Vector2f::right();
+  EXPECT_EQ(1, v.x);
+  EXPECT_EQ(0, v.y);
+}
+
+TEST(CommonVectors, Zero) {
+  Vector2f v = Vector2f::zero();
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(0, v.y);
+}
+
+TEST(CommonVectors, One) {
+  Vector2f v = Vector2f::one();
+  EXPECT_EQ(1, v.x);
+  EXPECT_EQ(1, v.y);
+}
+
 TEST(ToString, PositiveVectorFloat) {
   Vector2f v(2.57, -34.9);
   std::string res = "(2.57, -34.9)";
