@@ -65,7 +65,7 @@ public:
   * \param xValue The x value of the vector.
   * \param yValue The y value of the vector.
   */
-  void set(T xValue, T yValue);
+  template <typename U, typename V> void set(U xValue, V yValue);
 
   /*!
   * \brief Return a Vector2(0, 1).

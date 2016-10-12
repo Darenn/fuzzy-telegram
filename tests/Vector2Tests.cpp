@@ -81,6 +81,15 @@ TEST(ToString, PositiveVectorFloat) {
   std::string res = "(2.57, -34.9)";
   EXPECT_STREQ(res.c_str(), v.toString().c_str());
 }
+
+TEST(Set, DifferentTypes) {
+  Vector2i v;
+  unsigned char c = 2;
+  float f = 2.58f;
+  v.set(c, f);
+  EXPECT_EQ(2, v.x);
+  EXPECT_EQ(2, v.y);
+}
 // Operators
 
 TEST(Stream, StreamInsertion) {

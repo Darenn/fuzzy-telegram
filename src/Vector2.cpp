@@ -42,6 +42,13 @@ template <typename T> std::string Vector2<T>::toString() const {
 }
 
 template <typename T>
+template <typename U, typename V>
+void Vector2<T>::set(U xValue, V yValue) {
+  x = static_cast<T>(xValue);
+  y = static_cast<T>(yValue);
+}
+
+template <typename T>
 const T Vector2<T>::operator[](const std::size_t i) const {
   if (i == 0)
     return x;
