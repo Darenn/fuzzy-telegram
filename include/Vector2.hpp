@@ -41,13 +41,13 @@ public:
   * \brief Return the length of this vector.
   * \return The length of this vector.
   */
-  Vector2 magnitude();
+  float magnitude();
 
   /*!
   * \brief Return the square length of this vector.
   * \return The square length of this vector.
   */
-  Vector2 squareMagnitude();
+  float squaredMagnitude();
 
   /*!
   * \brief Normalize this vector;

@@ -1,5 +1,6 @@
 #include "Vector2.hpp"
 #include <cassert>
+#include <cmath>
 #include <stdexcept>
 
 namespace fuzzyTelegram {
@@ -18,7 +19,13 @@ Vector2<T>::Vector2(const Vector2<U> &vector)
 
 template <typename T> Vector2<T>::~Vector2<T>() {}
 
-template <typename T> Vector2<T> Vector2<T>::magnitude() {}
+template <typename T> float Vector2<T>::magnitude() {
+  return sqrt(x * x + y * y);
+}
+
+template <typename T> float Vector2<T>::squaredMagnitude() {
+  return x * x + y * y;
+}
 
 template <typename T>
 const T Vector2<T>::operator[](const std::size_t i) const {

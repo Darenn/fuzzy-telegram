@@ -64,6 +64,20 @@ TEST(ValueConstructor, DifferentType) {
   EXPECT_EQ(2, v.y);
 }
 
+// Methods
+
+TEST(Magnitude, NegativeVector) {
+  Vector2i v(4, -3);
+  EXPECT_EQ(5, v.magnitude());
+}
+
+TEST(SquaredMagnitude, NegativeVector) {
+  Vector2i v(-5, -5);
+  EXPECT_EQ(50, v.squaredMagnitude());
+}
+
+// Operators
+
 TEST(Stream, StreamInsertion) {
   Vector2i v(2, 5);
   std::stringstream s;
