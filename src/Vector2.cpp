@@ -48,6 +48,12 @@ void Vector2<T>::set(U xValue, V yValue) {
   y = static_cast<T>(yValue);
 }
 
+template <typename T> Vector2<T> Vector2<T>::normalized() {
+  Vector2<T> v(*this);
+  v.normalize();
+  return v;
+}
+
 template <typename T>
 const T Vector2<T>::operator[](const std::size_t i) const {
   if (i == 0)

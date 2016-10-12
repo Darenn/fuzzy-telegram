@@ -76,6 +76,32 @@ TEST(SquaredMagnitude, NegativeVector) {
   EXPECT_EQ(50, v.squaredMagnitude());
 }
 
+TEST(Normalize, IntVector) {
+  Vector2i v(-5, -6);
+  v.normalize();
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(0, v.y);
+}
+
+TEST(Normalize, FloatVector) {
+  Vector2f v(-2, -2);
+  v.normalize();
+  EXPECT_NEAR(-0.7f, v.x, 0.1f);
+  EXPECT_NEAR(-0.7f, v.y, 0.1f);
+}
+
+TEST(Normalized, IntVector) {
+  Vector2i v(Vector2f(-2, -2).normalized());
+  EXPECT_EQ(0, v.x);
+  EXPECT_EQ(0, v.y);
+}
+
+TEST(Normalized, FloatVector) {
+  Vector2f v(Vector2f(-2, -2).normalized());
+  EXPECT_NEAR(-0.7f, v.x, 0.1f);
+  EXPECT_NEAR(-0.7f, v.y, 0.1f);
+}
+
 TEST(ToString, PositiveVectorFloat) {
   Vector2f v(2.57, -34.9);
   std::string res = "(2.57, -34.9)";
