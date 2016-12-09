@@ -5,7 +5,7 @@
 #include <iostream>
 #include <stdexcept>
 
-namespace fuzzyTelegram {
+using namespace ft;
 
 TEST(VoidConstructor, Integer) {
   Vector2i v;
@@ -298,8 +298,10 @@ TEST(BinaryArithmeticOperatorPlusWithVector, VectorsSameType) {
   EXPECT_EQ(430, (v + v2).y);
 }
 
-// TODO Would be nice to add two different vectors, but of which type should be
-// the result ? (maybe the larger type ?(the one which can contains without loss
+// TODO Would be nice to add two different vectors, but of which type should
+// be
+// the result ? (maybe the larger type ?(the one which can contains without
+// loss
 // the result))
 TEST(DISABLED_BinaryArithmeticOperatorPlusWithVector, VectorsDifferentType) {
   Vector2i v(20, 30);
@@ -317,7 +319,8 @@ TEST(BinaryArithmeticOperatorMinusWithVector, VectorsSameType) {
 
 // TODO Would be nice to substract two different vectors, but of which type
 // should be Same with all other operators.
-// the result ? (maybe the larger type (the one which can contains without loss
+// the result ? (maybe the larger type (the one which can contains without
+// loss
 // the result)?)
 TEST(DISABLED_BinaryArithmeticOperatorMinusWithVector, VectorsDifferentType) {
   Vector2i v(20, 30);
@@ -507,4 +510,3 @@ TEST(CompoundAssignmentOperatorDivideWithValue, ValueDifferentType) {
   EXPECT_EQ(2, v.x);
   EXPECT_EQ(1, v.y);
 }
-};

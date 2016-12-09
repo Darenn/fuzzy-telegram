@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <string>
 
-namespace fuzzyTelegram {
+namespace ft {
 
 template <typename T> Vector2<T>::Vector2(void) : x(0), y(0) {}
 

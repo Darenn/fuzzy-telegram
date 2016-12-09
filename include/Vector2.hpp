@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-namespace fuzzyTelegram {
+namespace ft {
 
 template <typename T> class Vector2 {
 
